@@ -1,5 +1,6 @@
-const { default: Footer } = require("../Footer/Footer")
-const { default: Header } = require("../Header/Header")
+import Footer from "../Footer/Footer"
+import Header from "../Header/Header"
+
 
 const Layout = ({children}) => {
     return (
