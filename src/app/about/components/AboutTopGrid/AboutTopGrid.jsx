@@ -10,7 +10,13 @@ const AboutSliderData = [
         image: "/about/aboutSliderImg1.jpg"
     },
     {
-        image: "/about/aboutHeaderTitle.jpg"
+        image: "/about/aboutSliderImg2.png"
+    },
+    {
+        image: "/about/aboutSliderImg3.png"
+    },
+    {
+        image: "/about/aboutSliderImg4.png"
     },
 ]
 
