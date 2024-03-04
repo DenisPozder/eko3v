@@ -1,0 +1,137 @@
+.about_top_grid {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+}
+
+.about_tg_margin {
+    width: auto;
+    height: 100%;
+    margin: 0 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.about_tg_text {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_tg_text h1 {
+    color: var(--yellow);
+    position: relative;
+}
+
+.about_tg_text h1::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--yellow);
+    left: 0;
+    bottom: -1rem;
+}
+
+.about_tg_text p {
+    margin: 3rem 0;
+    color: var(--dark);
+}
+
+.about_tg_text a {
+    width: 240px;
+    height: 50px;
+    background-color: var(--yellow);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color .4s ease;
+}
+
+.about_tg_text a:hover {
+    background-color: var(--dark);
+}
+
+/*----- About Slider -----*/
+.about_tg_slider {
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+
+.slider_card {
+    width: 100%;
+    height: 100%;
+}
+
+.slider_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    overflow: hidden;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    animation: opacity 1s ease-out forwards;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slider_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+    .about_tg_margin {
+        margin: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about_tg_margin {
+        margin: 0 20px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .about_tg_text {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .about_tg_margin {
+        margin: 0 10px;
+    }
+
+    .about_tg_slider {
+        height: 380px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .about_tg_margin {
+        margin: 0 5px;
+    }
+}

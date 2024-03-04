@@ -1,0 +1,103 @@
+.about_component {
+    padding: 3rem 0;
+    background-color: #f2f2f2;
+}
+
+.about_component_content {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.about_component_column {
+    width: 100%;
+}
+
+.about_component_column:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 420px;
+}
+
+.about_component_column:nth-child(1) h1 {
+    color: var(--dark);
+    position: relative;
+}
+
+.about_component_column:nth-child(1) h1::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 2px;
+    border-radius: 2px;
+    bottom: -1rem;
+    background-color: var(--yellow);
+    left: 0;
+}
+
+.about_component_column:nth-child(1) p {
+    color: var(--dark);
+    margin: 3rem 0;
+}
+
+.about_component_column:nth-child(1) a {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color .4s ease;
+}
+
+.about_component_column:nth-child(1) a:hover {
+    background-color: var(--dark);
+}
+
+.about_component_column:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+}
+
+.about_component_column:last-child .acc_image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.about_component_column:last-child .acc_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+    .about_component_column:nth-child(1) p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about_component_content {
+        grid-template-columns: repeat(1,1fr);
+        gap: 3rem;
+    }
+
+    .about_component_column:nth-child(1) {
+        height: auto;
+    }
+
+    .about_component_column:last-child {
+        height: 380px;
+    }
+}
