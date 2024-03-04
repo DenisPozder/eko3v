@@ -16,17 +16,24 @@
 .maintenance_box {
     width: 100%;
     height: 420px;
+    cursor: pointer;
+}
+
+.maintenance_box:hover .maintenance_image img {
+    transform: scale(1.1);
 }
 
 .maintenance_image {
     width: 100%;
     height: 200px;
+    overflow: hidden;
 }
 
 .maintenance_image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform .4s ease;
 }
 
 .maintenance_text {
