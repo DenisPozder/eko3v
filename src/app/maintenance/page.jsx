@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: "Održavanje zelenila",
     desc: "Jedna od najvažnijih stvari da bi bijke bile zdrave i cvetne, a trava zelena i gusta jeste pravilno održavanje i negovanje.",
-    url: "",
+    url: "https://eko3v.vercel.app/maintenance",
     siteName: "Eko-3V",
     images: {
       url: "/maintenance/maintenanceGridImg4.jpg",
