@@ -7,6 +7,17 @@ export const metadata = {
   title: "Kontakt",
   description:
     "Dobijte vašu ponudu! Želite travnjak ili baštu svojih snova. Lakše je nego što mislite! Kontaktirajte nas danas i mi ćemo ulepšati vaš dom ili poslovni prostor.",
+  openGraph: {
+    title: "Kontakt",
+    desc: "Dobijte vašu ponudu! Želite travnjak ili baštu svojih snova. Lakše je nego što mislite! Kontaktirajte nas danas i mi ćemo ulepšati vaš dom ili poslovni prostor.",
+    url: "",
+    siteName: "Eko-3V",
+    images: {
+      url: "/home/gardenBannerImg.jpg",
+      width: 1260,
+      height: 880,
+    },
+  },
 };
 
 const page = () => {

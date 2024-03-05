@@ -8,6 +8,17 @@ export const metadata = {
   title: "Projektovanje i izrada",
   description:
     "Sa našim pejzažnim arhitektom upotpunise viziju i san o svojoj zelenoj oazi ili ćemo vam je mi kreirati! Pre izrade projekta vrši se izlazak i snimanje terena...",
+  openGraph: {
+    title: "Projektovanje i izrada",
+    desc: "Sa našim pejzažnim arhitektom upotpunise viziju i san o svojoj zelenoj oazi ili ćemo vam je mi kreirati! Pre izrade projekta vrši se izlazak i snimanje terena...",
+    url: "",
+    siteName: "Eko-3V",
+    images: {
+      url: "/design/designGridImg2.jpg",
+      width: 1260,
+      height: 880,
+    },
+  },
 };
 
 const page = () => {

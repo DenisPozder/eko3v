@@ -9,6 +9,17 @@ import AboutSpecialties from './components/AboutSpecialties/AboutSpecialties';
 export const metadata = {
   title: "O nama",
   description: "Ukratko o nama. Eko-3V je firma čiji osnivači imaju više decenijsko iskustvo u pruzanju usluga u oblasti hortikulture. Pružamo sve vrste usluga uredjenja...",
+  openGraph: {
+    title: "O nama",
+    desc: "Ukratko o nama. Eko-3V je firma čiji osnivači imaju više decenijsko iskustvo u pruzanju usluga u oblasti hortikulture. Pružamo sve vrste usluga uredjenja...",
+    url: "",
+    siteName: "Eko-3V",
+    images: {
+      url: "/about/aboutSliderImg1.jpg",
+      width: 1260,
+      height: 880
+    }
+  }
 };
 
 const page = () => {

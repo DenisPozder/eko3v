@@ -8,13 +8,27 @@ export const metadata = {
   title: "Održavanje zelenila",
   description:
     "Jedna od najvažnijih stvari da bi bijke bile zdrave i cvetne, a trava zelena i gusta jeste pravilno održavanje i negovanje.",
+  openGraph: {
+    title: "Održavanje zelenila",
+    desc: "Jedna od najvažnijih stvari da bi bijke bile zdrave i cvetne, a trava zelena i gusta jeste pravilno održavanje i negovanje.",
+    url: "",
+    siteName: "Eko-3V",
+    images: {
+      url: "/maintenance/maintenanceGridImg4.jpg",
+      width: 1260,
+      height: 880,
+    },
+  },
 };
 
 const page = () => {
   return (
     <Layout>
       <main className="page_container">
-        <HeaderTitle title="Održavanje & Uređenje" image="/maintenance/maintenanceHeaderImg.jpeg" />
+        <HeaderTitle
+          title="Održavanje & Uređenje"
+          image="/maintenance/maintenanceHeaderImg.jpeg"
+        />
         <MaintenanceTopText />
         <MaintenanceGrid />
       </main>

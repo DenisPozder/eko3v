@@ -8,13 +8,27 @@ export const metadata = {
   title: "Trava i biljke",
   description:
     "Sejanje travnjaka je ključni korak ka stvaranju zelene oaze. Pažljivo birana semena, pravilno pripremljena zemlja i pravilna nega doprinose formiranju gustog...",
+  openGraph: {
+    title: "Trava i biljke",
+    desc: "Sejanje travnjaka je ključni korak ka stvaranju zelene oaze. Pažljivo birana semena, pravilno pripremljena zemlja i pravilna nega doprinose formiranju gustog...",
+    url: "",
+    siteName: "Eko-3V",
+    images: {
+      url: "/grass/grassGridImg5.png",
+      width: 1260,
+      height: 880,
+    },
+  },
 };
 
 const page = () => {
   return (
     <Layout>
       <main className="page_container">
-        <HeaderTitle image={"/grass/headerTitleGrass.jpg"} title={"Trava&Biljke"} />
+        <HeaderTitle
+          image={"/grass/headerTitleGrass.jpg"}
+          title={"Trava&Biljke"}
+        />
         <TopText />
         <GrassGrid />
       </main>
