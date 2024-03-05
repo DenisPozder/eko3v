@@ -48,14 +48,14 @@ const AboutTopGrid = () => {
     <div className={styles.about_top_grid}>
         <div className={styles.about_tg_margin}>
             <div className={styles.about_tg_text}>
-                <h1>Ukratko o nama</h1>
-                <p>Eko-3V je firma čiji osnivači imaju više decenijsko iskustvo u pruzanju usluga u oblasti hortikulture. Pružamo sve vrste usluga uredjenja i održavanja zelenih površina, kako bismo zadovoljili sve stambene ili poslovne potrebe, bilo da se radi o maloj parceli koju želite da ispunite cvećem ili biljkama, ili parceli od nekoliko hiljada kvadrata na kojoj želite savršen travnjak tu smo da vam pomognemo!</p>
-                <Link href={"/maintenance"}>Pogledajte naše usluge</Link>
+                <h1 className='slide-in slide-left'>Ukratko o nama</h1>
+                <p className='slide-in slide-left' style={{transitionDelay: '.3s'}}>Eko-3V je firma čiji osnivači imaju više decenijsko iskustvo u pruzanju usluga u oblasti hortikulture. Pružamo sve vrste usluga uredjenja i održavanja zelenih površina, kako bismo zadovoljili sve stambene ili poslovne potrebe, bilo da se radi o maloj parceli koju želite da ispunite cvećem ili biljkama, ili parceli od nekoliko hiljada kvadrata na kojoj želite savršen travnjak tu smo da vam pomognemo!</p>
+                <div className='slide-in slide-left' style={{transitionDelay: '.6s'}}><Link href={"/maintenance"}>Pogledajte naše usluge</Link></div>
             </div>
-            <div className={styles.about_tg_slider}>
+            <div className={`${styles.about_tg_slider} slide-in slide-right`}>
                 {
                     AboutSliderData.map((slide, index) => (
-                        <div className={styles.slider_card} key={index}>
+                        <div className={`${styles.slider_card}`} key={index}>
                             {
                                 index === current && (
                                     <div className={styles.slider_image}>

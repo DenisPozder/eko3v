@@ -40,7 +40,7 @@ const MaintenanceGrid = () => {
         <div className={styles.maintenance_grid_content}>
             {
                 MaintenanceGridData.map((maintenance, index) => (
-                    <div className={styles.maintenance_box} key={index}>
+                    <div className={`${styles.maintenance_box} slide-in slide-bottom`} style={{transitionDelay: `${index * .3}s`}} key={index}>
                         <div className={styles.maintenance_image}>
                             <Image src={maintenance.image} alt={maintenance.title} width={600} loading='lazy' height={200} />
                         </div>

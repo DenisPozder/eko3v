@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import styles from './os.module.css'
-import Image from 'next/image'
 
 const OurSpecialtiesData = [
     {
@@ -25,11 +24,11 @@ const OurSpecialties = () => {
     <div className={styles.our_specialties}>
         <div className="margin">
             <div className={styles.os_content}>
-                <h2>Naše specijalnosti</h2>
+                <h2 className='slide-in slide-top'>Naše specijalnosti</h2>
                 <div className={styles.os_wrap}>
                     {
                         OurSpecialtiesData.map((specialty, index) => (
-                            <div key={index} className={styles.os_box}>
+                            <div key={index} className={`${styles.os_box} slide-in slide-bottom`} style={{transitionDelay: `${index * 0.3}s`}}>
                                 <div className={styles.os_image}>
                                     <img src={specialty.image} alt={specialty.title} />
                                 </div>
@@ -41,7 +40,9 @@ const OurSpecialties = () => {
                         ))
                     }
                 </div>
-                <Link href={'/grass'}>Pogledajte sve usluge</Link>
+                <div className='slide-in slide-bottom'>
+                    <Link className='slide-in slide-bottom' href={'/grass'}>Pogledajte sve usluge</Link>
+                </div>
             </div>
         </div>
     </div>

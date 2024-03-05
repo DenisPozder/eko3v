@@ -9,9 +9,9 @@ const Hero = () => {
       <div className={styles.hero_overlay}>
         <div className={styles.hero_margin}>
           <div className={styles.hero_content}>
-            <h1>Napravićemo vaš eksterijer raskošnim</h1>
-            <p>Uređenje prostora za vaš dom ili posao</p>
-            <Link href={"tel:0621612007"}>Pozovite nas!</Link>
+            <h1 className='slide-in slide-top'>Napravićemo vaš eksterijer raskošnim</h1>
+            <p className='fade-in fade-faster'>Uređenje prostora za vaš dom ili posao</p>
+            <div className='slide-in slide-bottom'><Link href={"tel:0621612007"}>Pozovite nas!</Link></div>
           </div>
         </div>
       </div>

@@ -19,11 +19,11 @@ const AboutSpecialtiesData = [
 const AboutSpecialties = () => {
   return (
     <div className={styles.about_specialties}>
-        <h1>Naše specijalnosti</h1>
+        <h1 className='slide-in slide-top'>Naše specijalnosti</h1>
         <div className={styles.about_specialties_content}>
             {
                 AboutSpecialtiesData.map((about, index) => (
-                    <div className={styles.as_card} key={index}>
+                    <div className={`${styles.as_card} slide-in slide-bottom`} style={{transitionDelay: `${index * .3}s`}} key={index}>
                         <Image src={about.image} alt={about.title} loading='lazy' width={600} height={440} />
                         <div className={styles.as_overlay}>
                             <h2>{about.title}</h2>
