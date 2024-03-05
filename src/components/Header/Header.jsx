@@ -104,44 +104,66 @@ const Header = () => {
   }, []);
 
   return (
-    <header
-      className={`${styles.header_container} ${
-        headerOnScroll ? styles.change : ""
-      }`}
-    >
-      <div className={styles.header_content}>
-        <div className={styles.header_bars} onClick={toggleHeader}>
-          <RiMenu2Fill />
-        </div>
-        <div className={styles.header_logo}>
-          <Link href={"/"}>
-            <Logo />
+    <>
+      <header
+        className={`${styles.header_container} ${
+          headerOnScroll ? styles.change : ""
+        }`}
+      >
+        <div className={styles.header_content}>
+          <div className={styles.header_bars} onClick={toggleHeader}>
+            <RiMenu2Fill />
+          </div>
+          <div className={styles.header_logo}>
+            <Link href={"/"}>
+              <Logo />
+            </Link>
+          </div>
+          <div
+            className={`${styles.header_links} ${
+              showHeader ? styles.show : ""
+            }`}
+          >
+            <div className={styles.header_close} onClick={closeHeader}>
+              <IoIosClose />
+            </div>
+            {HeaderLinks.map((link, index) => (
+              <Link
+                className={pathname === link.href ? styles.active : ""}
+                href={link.href}
+                key={index}
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
+          <Link href={"tel:0621612007"} className={styles.header_mobile_icon}>
+            <FaPhoneAlt />
+          </Link>
+          <Link href={"tel:0621612007"} className={styles.header_mobile}>
+            Pozovite nas
           </Link>
         </div>
-        <div
-          className={`${styles.header_links} ${showHeader ? styles.show : ""}`}
-        >
-          <div className={styles.header_close} onClick={closeHeader}>
-            <IoIosClose />
-          </div>
-          {HeaderLinks.map((link, index) => (
-            <Link
-              className={pathname === link.href ? styles.active : ""}
-              href={link.href}
-              key={index}
-            >
-              {link.title}
-            </Link>
-          ))}
+      </header>
+      <div
+        className={`${styles.mobile_header_links} ${
+          showHeader ? styles.show : ""
+        }`}
+      >
+        <div className={styles.mobile_header_close} onClick={closeHeader}>
+          <IoIosClose />
         </div>
-        <Link href={"tel:0621612007"} className={styles.header_mobile_icon}>
-          <FaPhoneAlt />
-        </Link>
-        <Link href={"tel:0621612007"} className={styles.header_mobile}>
-          Pozovite nas
-        </Link>
+        {HeaderLinks.map((link, index) => (
+          <Link
+            className={pathname === link.href ? styles.active : ""}
+            href={link.href}
+            key={index}
+          >
+            {link.title}
+          </Link>
+        ))}
       </div>
-    </header>
+    </>
   );
 };
 
