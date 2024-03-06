@@ -23,7 +23,7 @@ const AboutSpecialties = () => {
         <div className={styles.about_specialties_content}>
             {
                 AboutSpecialtiesData.map((about, index) => (
-                    <div className={`${styles.as_card} slide-in slide-bottom`} style={{transitionDelay: `${index * .3}s`}} key={index}>
+                    <div className={`${styles.as_card} slide-in slide-bottom`} style={{transitionDelay: `${index * .1}s`}} key={index}>
                         <Image src={about.image} alt={about.title} loading='lazy' width={600} height={440} />
                         <div className={styles.as_overlay}>
                             <h2>{about.title}</h2>

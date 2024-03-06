@@ -27,7 +27,7 @@ const DesignGrid = () => {
     <div className={styles.design_grid}>
         {
             DesignGridData.map((design, index) => (
-                <div className={`${styles.design_image} slide-in slide-bottom`} style={{transitionDelay: `${index * .3}s`}} key={index}>
+                <div className={`${styles.design_image} slide-in slide-bottom`} style={{transitionDelay: `${index * .1}s`}} key={index}>
                     <Image src={design.image} alt={`Slika ${index + 1}`} width={800} height={400} loading='lazy' />
                 </div>
             ))

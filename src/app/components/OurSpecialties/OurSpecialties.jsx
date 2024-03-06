@@ -28,7 +28,7 @@ const OurSpecialties = () => {
                 <div className={styles.os_wrap}>
                     {
                         OurSpecialtiesData.map((specialty, index) => (
-                            <div key={index} className={`${styles.os_box} slide-in slide-bottom`} style={{transitionDelay: `${index * 0.3}s`}}>
+                            <div key={index} className={`${styles.os_box} slide-in slide-bottom`} style={{transitionDelay: `${index * 0.1}s`}}>
                                 <div className={styles.os_image}>
                                     <img src={specialty.image} alt={specialty.title} />
                                 </div>

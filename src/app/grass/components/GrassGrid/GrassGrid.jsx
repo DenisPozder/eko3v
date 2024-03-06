@@ -40,7 +40,7 @@ const GrassGrid = () => {
         <div className={styles.grass_grid_content}>
             {
                 GrassGridData.map((grass, index) => (
-                    <div key={index} className={`${styles.grass_box} slide-in slide-bottom`} style={{ transitionDelay: `${index * .3}s`}}>
+                    <div key={index} className={`${styles.grass_box} slide-in slide-bottom`} style={{ transitionDelay: `${index * .1}s`}}>
                         <div className={styles.grass_image}>
                             <Image src={grass.image} alt={grass.title} width={1000} height={200} loading='lazy' />
                         </div>
