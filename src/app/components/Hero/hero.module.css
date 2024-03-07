@@ -3,6 +3,7 @@
     height: 90vh;
     position: relative;
     max-height: 720px;
+    overflow: hidden;
 }
 
 .hero_container img {
@@ -11,10 +12,65 @@
     object-fit: cover;
 }
 
-.hero_overlay {
+/*----- Hero Wave -----*/
+.hero_wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('/home/wave.png');
+    z-index: 1;
+    background-size: 1000px 100px;
+}
+
+.hero_wave.hw_1 {
+    animation: animate 30s linear infinite;
+    z-index: 3;
+    animation-delay: 0s;
+    bottom: 0;
+    opacity: 1;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+.hero_wave.hw_2 {
+    animation: animate2 15s linear infinite;
+    z-index: 2;
+    animation-delay: -5s;
+    bottom: 10px;
+    opacity: .5;
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+.hero_background_overlay {
     position: absolute;
     z-index: 1;
     background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.hero_overlay {
+    position: absolute;
+    z-index: 5;
     width: 100%;
     height: 100%;
     top: 0;

@@ -6,6 +6,7 @@ const Hero = () => {
   return (
     <div className={styles.hero_container}>
       <Image src={'/home/heroImg.jpeg'} alt='Slika hiro sekcije' loading='lazy' fill="full" />
+      <div className={styles.hero_background_overlay}></div>
       <div className={styles.hero_overlay}>
         <div className={styles.hero_margin}>
           <div className={styles.hero_content}>
@@ -15,6 +16,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <div className={`${styles.hero_wave} ${styles.hw_1}`}></div>
+      <div className={`${styles.hero_wave} ${styles.hw_2}`}></div>
     </div>
   )
 }
