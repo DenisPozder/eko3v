@@ -27,7 +27,7 @@ const ContactInfo = () => {
                 {
                     ContactInfoData.map((contact, index) => (
                         <div key={index} className={styles.contact_info_card}>
-                            <span className='slide-in slide-top'>{contact.icon}</span>
+                            <span className='fade-in fade'>{contact.icon}</span>
                             <h3 className='fade-in fade-faster' style={{transitionDelay: '.2s'}}>{contact.title}</h3>
                             <p className='fade-in fade-faster' style={{transitionDelay: '.4s'}}>{contact.desc}</p>
                             <h3 className='slide-in slide-bottom' style={{transitionDelay: '.6s'}}>{contact.details}</h3>
