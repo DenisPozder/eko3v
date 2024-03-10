@@ -67,13 +67,13 @@ h2 {
 }
 
 .slide-bottom {
-  transform: translateY(100px);
+  transform: translateY(100px) scale(0.3);
   opacity: 0;
   transition: all .4s ease;
 }
 
 .slide-bottom.appear {
-  transform: translateY(0px);
+  transform: translateY(0px) scale(1);
   opacity: 1;
 }
 
