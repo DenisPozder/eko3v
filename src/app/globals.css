@@ -56,13 +56,13 @@ h2 {
 }
 
 .slide-top {
-  transform: translateY(-100px);
+  transform: translateY(-100px) scale(0.3);
   transition: all .4s ease;
   opacity: 0;
 }
 
 .slide-top.appear {
-  transform: translateY(0px);
+  transform: translateY(0px) scale(1);
   opacity: 1;
 }
 
