@@ -1,37 +1,37 @@
 export default function sitemap() {
     return [
         {
-            url: "https://eko3v.vercel.app/",
+            url: "https://www.eko-3v.rs/",
             lastModified: new Date(),
             changeFrequency: "monthly",
             priority: 1
         },
         {
-            url: "https://eko3v.vercel.app/grass",
+            url: "https://www.eko-3v.rs/grass",
             lastModified: new Date(),
             changeFrequency: "monthly",
             priority: 1
         },
         {
-            url: "https://eko3v.vercel.app/design",
+            url: "https://www.eko-3v.rs/design",
             lastModified: new Date(),
             changeFrequency: "monthly",
             priority: 1
         },
         {
-            url: "https://eko3v.vercel.app/maintenance",
+            url: "https://www.eko-3v.rs/maintenance",
             lastModified: new Date(),
             changeFrequency: "monthly",
             priority: 1
         },
         {
-            url: "https://eko3v.vercel.app/about",
+            url: "https://www.eko-3v.rs/about",
             lastModified: new Date(),
             changeFrequency: "monthly",
             priority: 1
         },
         {
-            url: "https://eko3v.vercel.app/contact",
+            url: "https://www.eko-3v.rs/contact",
             lastModified: new Date(),
             changeFrequency: "monthly",
             priority: 1

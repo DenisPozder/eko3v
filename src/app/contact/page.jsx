@@ -10,8 +10,7 @@ export const metadata = {
   openGraph: {
     title: "Kontakt",
     desc: "Dobijte vašu ponudu! Želite travnjak ili baštu svojih snova. Lakše je nego što mislite! Kontaktirajte nas danas i mi ćemo ulepšati vaš dom ili poslovni prostor.",
-    url: "https://eko3v.vercel.app/contact",
-    siteName: "Eko-3V",
+    url: "https://www.eko-3v.rs/contact",
     images: {
       url: "/home/gardenBannerImg.jpg",
       width: 1260,

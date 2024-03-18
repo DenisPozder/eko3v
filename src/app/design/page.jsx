@@ -11,8 +11,7 @@ export const metadata = {
   openGraph: {
     title: "Projektovanje i izrada",
     desc: "Sa našim pejzažnim arhitektom upotpunise viziju i san o svojoj zelenoj oazi ili ćemo vam je mi kreirati! Pre izrade projekta vrši se izlazak i snimanje terena...",
-    url: "https://eko3v.vercel.app/design",
-    siteName: "Eko-3V",
+    url: "https://www.eko-3v.rs/design",
     images: {
       url: "/design/designGridImg2.jpg",
       width: 1260,

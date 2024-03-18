@@ -11,8 +11,7 @@ export const metadata = {
   openGraph: {
     title: "Eko-3V je firma sa decenijskim iskustvom u hortikulturi",
     desc: "Eko-3V je firma čiji osnivači imaju više decenijsko iskustvo u pruzanju usluga u oblasti hortikulture. Pružamo sve vrste usluga uredjenja i održavanja...",
-    url: "https://eko3v.vercel.app/",
-    siteName: "Eko-3V",
+    url: "https://www.eko-3v.rs/",
     images: {
       url: "/home/ourSpecialties.jpg",
       width: 1260,

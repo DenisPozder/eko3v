@@ -11,8 +11,7 @@ export const metadata = {
   openGraph: {
     title: "Trava i biljke",
     desc: "Sejanje travnjaka je ključni korak ka stvaranju zelene oaze. Pažljivo birana semena, pravilno pripremljena zemlja i pravilna nega doprinose formiranju gustog...",
-    url: "https://eko3v.vercel.app/grass",
-    siteName: "Eko-3V",
+    url: "https://www.eko-3v.rs/grass",
     images: {
       url: "/grass/grassGridImg5.png",
       width: 1260,

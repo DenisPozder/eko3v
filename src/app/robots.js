@@ -6,6 +6,6 @@ export default function robots() {
             disallow: '/private/',
 
         },
-        sitemap: 'https://eko3v.vercel.app/sitemap.xml'
+        sitemap: 'https://www.eko-3v.rs/sitemap.xml'
     }
 }
