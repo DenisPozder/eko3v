@@ -1,0 +1,145 @@
+.about_middle_grid {
+    background-color: #f2f2f2;
+    padding: 3rem 0;
+    width: 100%;
+    height: auto;
+}
+
+.about_middle_margin {
+    margin: 0 80px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_middle_margin h1 {
+    color: var(--dark);
+    margin-bottom: 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_middle_margin h1::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 2px;
+    border-radius: 2px;
+    bottom: -1rem;
+    background-color: var(--yellow);
+}
+
+.about_middle_content {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.about_vectors {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_vector {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.about_vector:nth-child(1) {
+    margin-bottom: 2rem;
+}
+
+.av_circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+.av_circle svg {
+    color: green;
+    font-size: 2.4rem;
+}
+
+.about_vector h3 {
+    color: var(--yellow);
+    text-align: center;
+    font-weight: bold;
+}
+
+.about_vector p {
+    text-align: center;
+    color: var(--dark);
+}
+
+.about_vectors_img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_vectors_img img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .about_middle_margin {
+        margin: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about_middle_margin {
+        margin: 0 20px;
+    }
+
+    .about_middle_content {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .about_vectors_img {
+        padding: 1rem 0;
+    }
+
+    .about_vectors_img img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .about_middle_margin {
+        margin: 0 10px;
+    }
+
+    .about_vectors_img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .about_middle_margin {
+        margin: 0 5px;
+    }
+}

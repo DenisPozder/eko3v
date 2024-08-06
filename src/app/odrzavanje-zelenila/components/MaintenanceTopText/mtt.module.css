@@ -1,0 +1,42 @@
+.maintenance_top_text {
+    margin: 0 80px;
+    width: auto;
+    height: auto;
+    padding: 3rem 0;
+}
+
+.maintenance_top_text h3 {
+    color: var(--yellow);
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.maintenance_top_text p {
+    text-align: center;
+    color: var(--dark);
+}
+
+@media only screen and (max-width: 1024px) {
+    .maintenance_top_text {
+        margin: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .maintenance_top_text {
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .maintenance_top_text {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .maintenance_top_text {
+        margin: 0 5px;
+    }
+}

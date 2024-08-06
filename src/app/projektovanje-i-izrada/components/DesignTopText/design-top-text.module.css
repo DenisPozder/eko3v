@@ -1,0 +1,48 @@
+.design_top_text {
+    width: auto;
+    margin: 0 80px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.design_top_text h3 {
+    color: var(--yellow);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+}
+
+.design_top_text p {
+    color: var(--dark);
+    text-align: center;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1024px) {
+    .design_top_text {
+        margin: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .design_top_text {
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .design_top_text {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .design_top_text {
+        margin: 0 5px;
+    }
+}
